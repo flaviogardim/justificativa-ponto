@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Justificativa de Ponto</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="cabecalho">
+
+        <img src="logo.svg" class="logo">
+
+        <h1>Justificativa de Ponto</h1>
+
+        <p>Envie sua justificativa e anexe o comprovante.</p>
+
+    </div>
+
+    <form id="formulario">
+
+        <label>Nome do servidor</label>
+        <input type="text" id="nome">
+
+        <label>Data da ocorrência</label>
+        <input type="date" id="data">
+
+        <label>Horário 1</label>
+        <input type="time" id="horario1">
+
+        <label>Horário 2</label>
+        <input type="time" id="horario2">
+
+        <label>Justificativa</label>
+        <textarea id="justificativa"></textarea>
+
+        <label>Comprovante</label>
+
+        <input
+            type="file"
+            id="arquivo"
+            accept="image/*,.pdf">
+
+        <button type="submit">
+
+            ENVIAR JUSTIFICATIVA
+
+        </button>
+
+    </form>
+
+    <div id="mensagem"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
